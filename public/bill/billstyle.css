@@ -1,0 +1,116 @@
+body {
+  font-family: Rubik Mono One;
+  
+  background-image: radial-gradient(green, yellow, red);
+}
+
+
+#body {
+  font-size: 20px;  
+  height: 800px;
+  width: 500px;
+  margin: 100px auto;
+  background: #f7f7f7;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+}
+
+h1 {
+  background: black;
+  color: white;
+  font-weight: bold;
+  margin: 0;
+  text-align:center;
+  padding: 10px 100px;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: normal;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+p {
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+form input[type="text"] {
+  width=90px;
+}
+
+input {
+  padding-left: 20px;
+}
+
+#amount {
+  font-size: 14px;
+  /*color: #2980b9;*/
+  color: #red;
+  background-color: #f7f7f7;
+  width: 60%;
+  padding: 5px 5px 8px 8px;
+  margin-left: 20px;
+}
+
+#amount:focus {
+  background: #fff;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
+
+#percentage {
+  padding: 10px 10px 15px 15px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+button {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  margin: 30px auto;
+  background:#0066ff ;
+  border-radius: 5px;
+  width: 200px;
+  height: 50px;
+  font-size: 17px;
+  color: white;
+}
+
+button:hover {
+  background: blue;
+  border-bottom-color: #111;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+#rs {
+  font-size: 30px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+#rs:before {
+  content: "Net Amount";
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  text-transform: uppercase;
+}
+
+#rs sup {
+  font-size: 20px;
+  top: -18px;
+}
+
+#rs small {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+}

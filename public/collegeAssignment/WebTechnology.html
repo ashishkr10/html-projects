@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 1</title>
+    <style>
+        .clg{
+    text-align: center;
+    color: rgb(41, 8, 131);
+    text-shadow: 0px 0px 24px 2px black 0px 2px 20px 2px rgb(60, 150, 189) 0px 0px 20px 0px rgb(18, 18, 212) ;
+}
+.div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+table,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 900px;
+    height: 50px;
+}
+table{
+    margin: 80px 0px 0px 300px ;
+}
+button{
+    margin-left: 90px;
+}
+.ptg{
+    margin-top: 60px;
+   
+}
+label{
+ margin-left: 150px;
+}
+body{
+    background-color: rgb(75, 179, 54);
+    background-image: url(/index.jpg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 200px;
+}
+    </style>
+</head>
+<body>
+    <h1 class="clg">Sri Sairam College of Engineering</h1>
+    <div class="div">
+        Name:<input type="text"/>
+        USN:<input type="text" />
+        Department:<input type="text"/>
+        Section:<input type="text"/>
+        Date:<input type="text"/>
+    </div>
+    <table>
+        <thead>
+            <th>Subject Name</th>
+            <th>Subject Code</th>
+            <th>Max Marks</th>
+            <th>Obtained Marks</th>
+        </thead>
+        <tr>
+            <th><input type="text" value="System Software" /></th>
+            <th><input type="text" value="18CS61" /></th>
+            <th><input type="number" value="50" max="50"/></th>
+            <th><input type="number" id="sub1" value="" max="50" /></th>
+        </tr>
+        <tr>
+            <th><input type="text" value="Computer Graphics" /></th>
+            <th><input type="text" value="18CS62" /></th>
+            <th><input type="number" value="50" max="50" /></th>
+            <th><input type="number" id="sub2" value="" max="50" /></th>
+        </tr>
+        <tr>
+            <th><input type="text" value="Web Technology" /></th>
+            <th><input type="text" value="18CS63" /></th>
+            <th><input type="number" value="50" max="50"/></th>
+            <th><input type="number" id="sub3" value="" max="50" /></th>
+        </tr>
+        <tr>
+            <th><input type="text" value="Data Mining" /></th>
+            <th><input type="text" value="18CS641" /></th>
+            <th><input type="number" value="50" max="50" /></th>
+            <th><input type="number" id="sub4" value="" max="50" /></th>
+        </tr>
+        <tr>
+            <th><input type="text" value="Renewable Energy" /></th>
+            <th><input type="text" value="18EE653" /></th>
+            <th><input type="number" value="50" max="50" /></th>
+            <th><input type="number" id="sub5" value="" max="50" /></th>
+        </tr>
+    </table>
+    <div class="ptg">
+        <label >Total</label><input id="total" type="number"/>
+        <label >Percentage</label><input id="result" type="number"/>
+        <label >Grade</label><input id="grade" type="text"/>
+        <button onclick="getresult()">Calculate</button>
+        <button onclick="window.print()">Print</button>
+    </div>
+<script>
+        const getresult=()=>{
+    const a=parseInt(document.getElementById("sub1").value);
+    const b=parseInt(document.getElementById("sub2").value);
+    const c=parseInt(document.getElementById("sub3").value);
+    const d=parseInt(document.getElementById("sub4").value);
+    const e=parseInt(document.getElementById("sub5").value);
+    const total=a+b+c+d+e;
+    const result=(total/250)*100;
+    document.getElementById("total").value=total;
+    document.getElementById("result").value=result;
+    if(result>90){
+        document.getElementById("grade").value="S";
+    }
+    else if(result>80){
+        document.getElementById("grade").value="A";  
+    }
+    else if(result>70){
+        document.getElementById("grade").value="B";  
+    }
+    else if(result>60){
+        document.getElementById("grade").value="C";  
+    }
+    else if(result>50){
+        document.getElementById("grade").value="D";  
+    }
+    else if(result>40){
+        document.getElementById("grade").value="E";  
+    }
+    else{
+        document.getElementById("grade").value="fail***";  
+    }
+}
+</script>
+</body>
+</html>

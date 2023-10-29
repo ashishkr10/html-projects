@@ -1,0 +1,46 @@
+body{
+    padding: 25px;
+    margin: 50px 300px;
+    background: linear-gradient(to left, rgb(167, 43, 43),rgb(5, 177, 177));
+    color: red;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+h2{
+    color: rgb(12, 3, 34);
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#field{
+    margin: 34px 34px;
+    padding: 34px 44px;
+    border-radius: 34px;
+    border-style: dashed;
+    border-color: rgb(2, 83, 2);
+    border-width: 8px;
+}
+
+#login{
+    text-align: center;
+    color: rgb(218, 214, 16);
+    font-size: 34px;
+}
+
+.btn{
+    font-size: 20px;
+    border-radius: 28px;
+   background-color: rgb(190, 10, 145);
+   width: 223px;
+}
+
+.btn:hover{
+    background-color: darkslategrey;
+}
+
+#btn{
+    text-align: center;
+}

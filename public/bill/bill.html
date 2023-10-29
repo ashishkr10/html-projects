@@ -1,0 +1,45 @@
+<html>
+
+<head>
+        <title> Bill Calculator </title>
+		
+		<link rel="stylesheet" type="text/css" href="billstyle.css">
+</head>
+
+    <body>
+            <div id="body">
+        		 
+        <h1> Bill Calculator </h1>
+		
+		<div id="calculator">
+		<form>
+				
+		<p> Price of Item ( in Rs )</p> 
+		<input id="amount" type="text" placeholder="Enter Amount">  <br><br>
+		
+		<p> Taxes ( in % ) </p>
+		
+		<select id="percentage">
+		
+		<option disabled selected value="0"> Choose an option </option>
+		<option value="101">01% </option>
+		<option value="105">05% </option>
+		<option value="112">12% </option>
+		<option value="118">18% </option>
+		<option value="128">28% </option>
+		
+		</select>
+		
+		</form>
+         
+		 <button type="button" id="button"> Calculate !! </button>
+		 </div>
+		 
+		 <p id="rs"> Rs <span id="result"> 0.00 </span> </p>
+		 
+		 </div>
+		 <script type="text/javascript" src="billscript.js"></script>
+		 
+    </body>
+
+</html>

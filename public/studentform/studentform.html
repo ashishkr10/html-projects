@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="studentform.css">
+</head>
+
+<body>
+    <h2>Student Registration Form</h2>
+
+    <form action="backend.php">
+
+        <fieldset id="field">
+            <legend id="login">Student's Login</legend>
+
+            <div>
+                First Name:<input type="text" name="firstname">
+                Last Name:<input type="text" name="lastname"> <br><br>
+                Father Name: <input type="text" name="fathername"><br><br>
+            </div>
+
+            <div>
+                Date of Birth: <input type="date" name="dob"><br><br>
+            </div>
+            
+            <div>
+                Gender: <input type="radio" name="gender">MALE
+                <input type="radio" name="gender">FEMALE
+                <input type="radio" name="gender">OTHER
+            </div><br>
+
+            <div>
+                Contact Info: <input type="tel" name="contact" width="334px"><br><br>
+                Email ID: <input type="mail" name="mail"><br><br>
+            </div>
+
+            <div>
+                Qualification: <select name="qualification" id="qualify">
+                    <option value="10thpass">10th Pass</option>
+                    <option value="12pass">12th Pass</option>
+                    <option value="graduate">Under Graduate</option>
+                    <option value="postgraduate">Post Graduate</option>
+                </select><br><br>
+            </div>
+
+            <div>
+                Comment: <textarea name="comment" cols="40" rows="5"></textarea>
+            </div><br><br>
+
+            <div>
+                Terms and Conditions <input type="checkbox" name=term checked>
+            </div><br><br>
+
+            <div id="btn">
+                <input type="submit" value="Submit" class="btn">
+                <input type="reset" name="Reset" class="btn">
+            </div>
+
+        </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>

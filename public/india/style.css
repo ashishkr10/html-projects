@@ -1,0 +1,135 @@
+body{
+   margin: 0;
+}
+
+
+#container{
+    display: grid;
+    grid-template-areas:
+    'leftside section section rightside' 
+    'leftside section section rightside'
+    'footer footer footer footer';
+    background-image:linear-gradient(orange, yellow, green);
+}
+
+#leftside{
+    grid-area: leftside;
+}
+
+#section{
+    grid-area: section;
+}
+
+#rightside{
+    grid-area: rightside;
+}
+
+footer{
+    grid-area: footer;
+}
+
+/* .item{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 2px 3px;
+} */
+
+.logo span{
+    font-size: 24px;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.logo img{
+    width: 120px;
+    height: 120px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 55px;
+}
+
+.nav span{
+    font-size: 24px;
+    font-weight: 700;
+    font-style: oblique;
+    color: rgb(202, 18, 193);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    margin: 12px;
+    padding: 8px;
+}
+ .nav a:hover{
+     background-color: rgb(219, 70, 50);
+     border-radius: 8px;
+ }
+
+ .nav img{
+    width: 180px;
+    height: 130px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .intro{
+     display: flex;
+     flex-direction: column;
+ }
+
+ .intro img{
+    width: 200px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+ }
+
+ .intro span{
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ ul{
+     font-size: 16px;
+ }
+
+ .primary{
+     text-decoration: underline;
+     font-weight: 900;
+     text-align: center;
+     color: rgb(13, 70, 134);
+     font-family: 'Girassol', cursive;
+ }
+
+ .secondary{
+     color: rgb(128, 214, 29);
+     font-weight: 700;
+     font-size: 22px;
+     text-align: center;
+     font-family: 'Rubik', sans-serif;
+ }
+
+ #section p{
+     font-size: 20px;
+     font-family: 'Itim', cursive;
+ }
+
+ footer{
+     font-size: 24px;
+     text-align: center;
+     color: white;
+     background-color: black;
+ }

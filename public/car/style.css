@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+
+}
+
+#navbar::before{
+    content: "";
+    background-color: rgb(238, 55, 55);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#logo{
+    margin: 5px 9px;
+   
+}
+
+#logo img{
+    height: 100px;
+}
+
+.menu{
+    padding: 35px 40px;
+    font-size: 1.1rem;
+   
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    border-radius: 12px;
+    color: white;
+    padding: 12px;
+    font-weight: 700;
+}
+
+.menu a:hover{
+    background-color: teal;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:15px 300px;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('img/car04.webp') no-repeat;
+    background-size: 1550px 750px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    /* opacity: 0.7; */
+}
+
+#home h1{
+    font-size: 65px;
+    color:rgb(35, 223, 182);
+    text-align: center;
+    margin-top: 220px;
+    
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 70px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+    transition: all 0.5s;
+}
+
+.btn:hover{
+    background-color: darkolivegreen;
+    transform: scale(1.2);
+}
+
+#service{
+    display: flex;
+    margin: 34px;
+}
+
+#service .box{ 
+    border: 4px solid brown;
+    padding: 34px;
+    margin: 2px 125px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#service .box img{ 
+    /* height: 160px; */
+    margin: auto;
+    display: block;
+ }
+
+ .primary{
+     font-size: 35px;
+     font-weight: 900;
+     text-align: center;
+ }
+ .secondary{
+     font-size: 20px;
+     font-weight: 900;
+     text-align: center;
+     margin-top: 25px;
+ }
+
+ #selling{
+     text-align: center;
+ }
+
+ #sell{
+    display: flex;
+    margin: 24px;
+}
+
+#sell .used{ 
+    /* border: 4px solid brown; */
+    padding: 44px;
+    margin: 4px 105px;
+    /* border-radius: 28px; */
+    /* background: #f2f2f2; */
+    /* margin-bottom: 20px; */
+}
+
+#sell .used img{ 
+    height: 320px;
+    margin: auto;
+    display: block;
+ }
+
+ #sell .used .filling img{
+    height: 120px;
+    margin: auto;
+    display: block;
+ }
+ #sell .used .filling p{
+   font-size: 25px;
+    text-align: center;
+    display: block;
+ }
+ 
+ #finance{
+    /* border: 4px solid brown; */
+     display: flex;
+     /* margin: 64px; */
+     margin-top: 24px;
+     text-align: center;
+    }
+    
+#finance::before{
+    content: "";
+    background :url('img/img01.jpg') no-repeat;
+    background-size: 1550px 450px;
+    position: absolute;
+    /* top:0px;
+    left:0px; */
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+ .fin{
+     /* border: 4px solid brown; */
+     padding: 1px;
+     margin: 45px 155px;
+     
+ }
+ #finance .fin img{ 
+    height: 360px;
+    margin: auto;
+    display: block;
+ }
+#con{
+    height: 755px;
+}
+
+#con h1{
+    font-size: 35px;
+    /* color:rgb(35, 223, 182); */
+    text-align: center;
+    margin-top: 0px;
+    
+}
+
+ #contact{
+     display: flex;
+     margin-top: 24px;
+     text-align: center;
+ }
+
+ .fom{
+     display: inline-block;
+     /* border: 4px solid brown; */
+    padding: 1px;
+    margin: 45px 101px;
+ }
+
+ .fom img{
+    height: 360px;
+    margin: auto;
+    display: block;
+ }
+
+ form{
+     font-size: 1.5rem;
+     width: 44%;
+ }
+ fieldset{
+    margin:34px;
+    padding:44px;
+    border-radius: 34px;
+    border-style: none;
+    border-width: 8px;
+ }
+
+ #con::before{
+    content: "";
+    background-color: rgb(224, 137, 86);
+    background-size: 1550px 450px;
+    position: absolute;
+    /* top:0px;
+    left:0px; */
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    text-align: center;
+    bottom: 0px;
+}
